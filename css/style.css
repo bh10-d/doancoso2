@@ -8,8 +8,16 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
 }
-h1{
+div{
     color: deeppink;
     text-align: center;
     margin-top: 400px;
+}
+div button{
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:10px;
+    outline: none;
 }
