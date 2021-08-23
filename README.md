@@ -15,4 +15,9 @@
     - yêu thích sản phẩm
     - trang chi tiết về sản phẩm
     
-    dcmdkfj
+# Các trang định làm
+    - 1 trang giới thiệu
+    - trang sản phẩm thì code 1 trang dùng chung
+    - 1 admin
+    - 1 trang chi tiết sản phẩm dùng chung
+# lần này code khá ít chức năng khá nhiều
