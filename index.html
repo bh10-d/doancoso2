@@ -1,18 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div>
-        <h1 id="dungml">viên gạch đầu tiên</h1>
-        <button class="btn">Bấm vào để thấy điều bất ngờ</button>
+    <div class="wrap_header">
+        <div class="wrap_header_p1">
+            <div class="wrap_header_p1_e">
+                <a href="" class="logo_header"><img src="image/logo.png" alt=""></a>
+                <div class="search_header">
+                    <div class="search_header_e">
+                        <div class="dropdown_header">
+                            <a href="javascript:void(0)" class="select">Chọn danh mục <i
+                                    class="fas fa-chevron-circle-down"></i></a>
+                            <div class="drop">
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                            </div>
+                        </div>
+                        <input type="text" placeholder="> Nhập sản phẩm">
+                        <button type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <p class="hotline_header">
+                    <i class="fas fa-phone-alt"></i>
+                    Hotline:
+                    <span>113 113</span>
+                </p>
+                <p class="account_header"><i class="far fa-user"></i> Tài khoản</p>
+                <p class="cart"><i class="fas fa-shopping-cart"></i> Giỏ hàng</p>
+            </div>
+        </div>
+        <div class="wrap_header_p2">
+            <label for="nav_check_input" class="bar"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" hidden name="" class="nav_check" id="nav_check_input">
+            <label for="nav_check_input" class="nav_overlay"></label>
+            <div class="responsive_nav">
+                <div class="header_user_close">
+                    <div class="user_info">
+                        <div class="user_info_e">
+                            <span><img src="image/logo.png" style="width:40px;height:40px;" alt=""></span>
+                            <div>
+                                <p>Xin chào: Bui Duc Hieu</p>
+                                <p>User 1</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <label for="nav_check_input" class="responsive_nav-close">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </div>
+
+                <ul class="responsive_nav-list">
+                    <li><a href="#">1</a></li>
+                    <li>Danh mục sản phẩm <span><i class="fas fa-arrow-up"></i>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </span></li>
+                    <li><a href="#">Tài khoản</a></li>
+                    <li><a href="#">Giỏ hàng</a></li>
+                </ul>
+                <!-- <span class="bar" onclick="bars();"></i></span> -->
+            </div>
+        </div>
     </div>
-    
     <script src="script/script.js"></script>
 </body>
+
 </html>

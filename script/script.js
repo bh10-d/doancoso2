@@ -1,5 +1,9 @@
-let dungml = document.querySelector('button');
-let txt = document.getElementById('dungml');
-dungml.addEventListener('click', ()=>{
-    txt.innerHTML = 'Địt con mẹ mày dũng à :))';
-})
+//bars
+// function bars() {
+//     var x = document.getElementById("myTopnav");
+//     if (x.className === "topnav") {
+//       x.className += " responsive";
+//     } else {
+//       x.className = "topnav";
+//     }
+//   }
