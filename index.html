@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <title>Tạp hóa công nghệ</title>
 </head>
 
 <body>
-    <div class="wrap_header">
-        <div class="wrap_header_p1">
-            <div class="wrap_header_p1_e">
-                <a href="" class="logo_header"><img src="image/logo.png" alt=""></a>
-                <div class="search_header">
-                    <div class="search_header_e">
-                        <div class="dropdown_header">
+    <div class="header__wrap"><!--edit-->
+        <div class="header__wrap--p1"><!--edit-->
+            <div class="header__wrap--p1e">
+                <a href="" class="header__logo"><img src="image/logo.png" alt=""></a>
+                <div class="header__search"><!--edit-->
+                    <div class="header__search--list">
+                        <div class="header__search-droplist">
                             <a href="javascript:void(0)" class="select">Chọn danh mục <i
                                     class="fas fa-chevron-circle-down"></i></a>
                             <div class="drop">
@@ -33,23 +34,24 @@
                         <button type="button"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
-                <p class="hotline_header">
+                <p class="header__hotline"><!--edit-->
                     <i class="fas fa-phone-alt"></i>
                     Hotline:
                     <span>113 113</span>
                 </p>
-                <p class="account_header"><i class="far fa-user"></i> Tài khoản</p>
-                <p class="cart"><i class="fas fa-shopping-cart"></i> Giỏ hàng</p>
+                <p class="header__account"><i class="far fa-user"></i> Tài khoản</p>
+                <p class="header__cart"><i class="fas fa-shopping-cart"></i> Giỏ hàng</p>
             </div>
         </div>
-        <div class="wrap_header_p2">
-            <label for="nav_check_input" class="bar"><i class="fas fa-bars"></i></label>
-            <input type="checkbox" hidden name="" class="nav_check" id="nav_check_input">
-            <label for="nav_check_input" class="nav_overlay"></label>
-            <div class="responsive_nav">
-                <div class="header_user_close">
-                    <div class="user_info">
-                        <div class="user_info_e">
+        <div class="header__wrap--p2"><!--edit-->
+            <label for="nav_check_input" class="head__navbarrespon--bars"><i class="fas fa-bars"></i></label>
+            <p class="head__navbarrespon--cart"><i class="fas fa-shopping-cart"></i></p>
+            <input type="checkbox" hidden name="" class="nav__check" id="nav_check_input">
+            <label for="nav_check_input" class="navbarrespon-overlay"></label>
+            <div class="header__navbarrespon">
+                <div class="header__user">
+                    <div class="user__info">
+                        <div class="user__info--table">
                             <span><img src="image/logo.png" style="width:40px;height:40px;" alt=""></span>
                             <div>
                                 <p>Xin chào: Bui Duc Hieu</p>
@@ -58,24 +60,24 @@
                         </div>
 
                     </div>
-                    <label for="nav_check_input" class="responsive_nav-close">
+                    <label for="nav_check_input" class="close">
                         <i class="fas fa-times"></i>
                     </label>
                 </div>
 
-                <ul class="responsive_nav-list">
+                <ul class="header__navbarrespon--list">
                     <li><a href="#">1</a></li>
-                    <li>Danh mục sản phẩm <span><i class="fas fa-arrow-up"></i>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                    <li><a style="cursor: pointer;" onclick="dropdownnav();">Danh mục sản phẩm </a><span class="arrow"><i class="fas fa-arrow-down"></i>
+                        <ul class="responsive__nav--list">
+                            <li><a href="#">Điện thoại - Máy tính bảng</a> </li>
+                            <li><a href="#">Laptop - Laptop Gaming</a> </li>
+                            <li><a href="#">Thiết bị văn phòng</a> </li>
+                            <li><a href="#">Kỹ thuật số</a> </li>
+                            <li><a href="#">Phụ kiện</a> </li>
                         </ul>
                     </span></li>
                     <li><a href="#">Tài khoản</a></li>
-                    <li><a href="#">Giỏ hàng</a></li>
+                    <!-- <li><a href="#">Giỏ hàng</a></li> -->
                 </ul>
                 <!-- <span class="bar" onclick="bars();"></i></span> -->
             </div>
