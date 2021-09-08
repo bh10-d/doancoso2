@@ -16,22 +16,22 @@
     <div class="header__wrap"><!--edit-->
         <div class="header__wrap--p1"><!--edit-->
             <div class="header__wrap--p1e">
-                <a href="" class="header__logo"><img src="image/logo.png" alt=""></a>
+                <a href="" class="header__logo"><img class="logo" src="image/logo.png" alt=""></a>
                 <div class="header__search"><!--edit-->
                     <div class="header__search--list">
                         <div class="header__search-droplist">
-                            <a href="javascript:void(0)" class="select">Chọn danh mục <i
+                            <a onclick="select();" class="select">Chọn danh mục <i
                                     class="fas fa-chevron-circle-down"></i></a>
                             <div class="drop">
-                                <a href="#">1</a>
-                                <a href="#">2</a>
-                                <a href="#">3</a>
-                                <a href="#">4</a>
-                                <a href="#">5</a>
+                                <a href="#">Điện thoại - Máy tính bảng</a>
+                                <a href="#">Laptop - Laptop Gaming</a>
+                                <a href="#">Thiết bị văn phòng</a>
+                                <a href="#">Kỹ thuật số</a>
+                                <a href="#">Phụ kiện</a>
                             </div>
                         </div>
                         <input type="text" placeholder="> Nhập sản phẩm">
-                        <button type="button"><i class="fas fa-search"></i></button>
+                        <button type="submit" class="btn"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
                 <p class="header__hotline"><!--edit-->
@@ -39,13 +39,50 @@
                     Hotline:
                     <span>113 113</span>
                 </p>
-                <p class="header__account"><i class="far fa-user"></i> Tài khoản</p>
-                <p class="header__cart"><i class="fas fa-shopping-cart"></i> Giỏ hàng</p>
+                <div class="header__account">
+                    <p><i class="far fa-user"></i> Tài khoản</p>
+                    <div class="header__account--option">
+                        <a href="#">Đăng nhập</a>
+                        <a href="#">Đăng kí</a>
+                    </div>
+                </div>
+                <div class="header__cart">
+                    <p><i class="fas fa-shopping-cart"></i> Giỏ hàng</p>
+                    <div class="cart--count">
+                        <span>1</span>
+                    </div>
+                    <div class="header__cart--list">
+                        <div class="header__cart--item">
+                            <img src="image/iphone.png" alt="">
+                            <div class="item--info">
+                                <span class="item-name">iPhone 12 Pro Max(512GB)</span>
+                                <span class="item--price">35.990.000đ</span>
+                                <div class="item--quantity">
+                                    <button class="btn item">-</button>
+                                    <input type="text" class="quantity" value="1">
+                                    <button class="btn item">+</button>
+                                </div>
+                                <!-- <span class="item--quantity" type="input"></span> -->
+                            </div>
+                        </div>
+                        <div class="cart__list--pay">
+                            <div>
+                                <span>Tổng cộng:</span><span>35.990.000 đ</span>
+                            </div>
+                            <button class="btn pay"><i class="fas fa-shopping-bag"></i> Tới giỏ hàng và thanh toán</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="header__wrap--p2"><!--edit-->
             <label for="nav_check_input" class="head__navbarrespon--bars"><i class="fas fa-bars"></i></label>
-            <p class="head__navbarrespon--cart"><i class="fas fa-shopping-cart"></i></p>
+            <div class="head__navbarrespon--cart">
+                <p ><i class="fas fa-shopping-cart"></i></p>
+                <div class="cart--count">
+                    <span>1</span>
+                </div>
+            </div>
             <input type="checkbox" hidden name="" class="nav__check" id="nav_check_input">
             <label for="nav_check_input" class="navbarrespon-overlay"></label>
             <div class="header__navbarrespon">
