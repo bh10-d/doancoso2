@@ -42,35 +42,37 @@
                 <div class="header__account">
                     <p><i class="far fa-user"></i> Tài khoản</p>
                     <div class="header__account--option">
-                        <a href="#">Đăng nhập</a>
-                        <a href="#">Đăng kí</a>
+                        <a href="login.html">Đăng nhập</a>
+                        <a href="signup.html">Đăng kí</a>
                     </div>
                 </div>
                 <div class="header__cart">
                     <p><i class="fas fa-shopping-cart"></i> Giỏ hàng</p>
                     <div class="cart--count">
-                        <span>1</span>
+                        <span>1</span> <!--so luong san pham------------------------------------------------------------------------------------------------>
                     </div>
                     <div class="header__cart--list">
-                        <div class="header__cart--item">
-                            <img src="image/iphone.png" alt="">
-                            <div class="item--info">
-                                <span class="item-name">iPhone 12 Pro Max(512GB)</span>
-                                <span class="item--price">35.990.000đ</span>
-                                <div class="item--quantity">
-                                    <button class="btn item">-</button>
-                                    <input type="text" class="quantity" value="1">
-                                    <button class="btn item">+</button>
+                        <form action="">
+                            <div class="header__cart--item">
+                                <img src="image/iphone.png" alt="">
+                                <div class="item--info">
+                                    <span class="item-name">iPhone 12 Pro Max(512GB)</span>
+                                    <span class="item--price">35.990.000đ</span>
+                                    <div class="item--quantity">
+                                        <a class="btn item minus" onclick="quanityminus();">-</a>
+                                        <input type="text" class="quantity" value="1">
+                                        <a class="btn item plus" onclick="quantityplus();">+</a>
+                                    </div>
+                                    <!-- <span class="item--quantity" type="input"></span> -->
                                 </div>
-                                <!-- <span class="item--quantity" type="input"></span> -->
                             </div>
-                        </div>
-                        <div class="cart__list--pay">
-                            <div>
-                                <span>Tổng cộng:</span><span>35.990.000 đ</span>
+                            <div class="cart__list--pay">
+                                <div>
+                                    <span>Tổng cộng:</span><span>35.990.000 đ</span>
+                                </div>
+                                <button class="btn pay" type="submit"><i class="fas fa-shopping-bag"></i> Tới giỏ hàng và thanh toán</button>
                             </div>
-                            <button class="btn pay"><i class="fas fa-shopping-bag"></i> Tới giỏ hàng và thanh toán</button>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -89,33 +91,33 @@
                 <div class="header__user">
                     <div class="user__info">
                         <div class="user__info--table">
-                            <span><img src="image/logo.png" style="width:40px;height:40px;" alt=""></span>
-                            <div>
-                                <p>Xin chào: Bui Duc Hieu</p>
+                            <span><img src="image/logo.png" style="width:40px;height:40px;" alt="logo"></span>
+                            <div style="display:block; width:240px; height:20px">
+                                <p>Xin chào: Lorem ipsum dolor sirendis fugiat sint quas provident.</p>
                                 <p>User 1</p>
                             </div>
                         </div>
-
                     </div>
                     <label for="nav_check_input" class="close">
                         <i class="fas fa-times"></i>
                     </label>
                 </div>
-
-                <ul class="header__navbarrespon--list">
-                    <li><a href="#">1</a></li>
-                    <li><a style="cursor: pointer;" onclick="dropdownnav();">Danh mục sản phẩm </a><span class="arrow"><i class="fas fa-arrow-down"></i>
-                        <ul class="responsive__nav--list">
-                            <li><a href="#">Điện thoại - Máy tính bảng</a> </li>
-                            <li><a href="#">Laptop - Laptop Gaming</a> </li>
-                            <li><a href="#">Thiết bị văn phòng</a> </li>
-                            <li><a href="#">Kỹ thuật số</a> </li>
-                            <li><a href="#">Phụ kiện</a> </li>
-                        </ul>
-                    </span></li>
-                    <li><a href="#">Tài khoản</a></li>
-                    <!-- <li><a href="#">Giỏ hàng</a></li> -->
-                </ul>
+                <div style="display:block; margin-top:90px">
+                    <ul class="header__navbarrespon--list">
+                        <li><a href="#">1</a></li>
+                        <li><a style="cursor: pointer;" onclick="dropdownnav();">Danh mục sản phẩm </a><span class="arrow"><i class="fas fa-arrow-down"></i>
+                            <ul class="responsive__nav--list">
+                                <li><a href="#">Điện thoại - Máy tính bảng</a> </li>
+                                <li><a href="#">Laptop - Laptop Gaming</a> </li>
+                                <li><a href="#">Thiết bị văn phòng</a> </li>
+                                <li><a href="#">Kỹ thuật số</a> </li>
+                                <li><a href="#">Phụ kiện</a> </li>
+                            </ul>
+                        </span></li>
+                        <li><a href="#">Tài khoản</a></li>
+                        <!-- <li><a href="#">Giỏ hàng</a></li> -->
+                    </ul>
+                </div>
                 <!-- <span class="bar" onclick="bars();"></i></span> -->
             </div>
         </div>
